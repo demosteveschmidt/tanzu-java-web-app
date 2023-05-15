@@ -8,8 +8,12 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		String message = "Now trying debug 1. 2. 3. Greetings from Spring Boot + Tanzu!";
-		return "<h1>" + message + "</h1>";
+		// update here AND the test ;-)
+		String message = "Greetings from Spring Boot + Tanzu!";
+		// had "<h1>" + message + "</h1>" BUT did not update test :-/
+		return message;
 	}
 
 }
+
+// how to force an update without a code change?
