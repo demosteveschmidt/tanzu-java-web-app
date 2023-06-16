@@ -10,10 +10,14 @@ public class HelloController {
 	public String index() {
 		// update here AND the test ;-)
 		String message = "Greetings from Spring Boot + Tanzu!";
-		// had "<h1>" + message + "</h1>" BUT did not update test :-/
+		return message;
+	}
+
+	@RequestMapping("/host")
+	public String index() {
+		// update here AND the test ;-)
+		String message = System.getenv("HOSTNAME");
 		return message;
 	}
 
 }
-
-// how to force an update without a code change?
