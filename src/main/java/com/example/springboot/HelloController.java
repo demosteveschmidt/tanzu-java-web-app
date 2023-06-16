@@ -9,7 +9,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String greeting() {
 		// update here AND the test ;-)
-		String message = "Greetings from Spring Boot + Tanzu!";
+		String message = "Greetings from Spring Boot + Tanzu!\n";
 		return message;
 	}
 
