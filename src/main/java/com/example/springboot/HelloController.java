@@ -15,8 +15,7 @@ public class HelloController {
 
 	@RequestMapping("/host")
 	public String hostname() {
-		// update here AND the test ;-)
-		String message = System.getenv("HOSTNAME");
+		String message = "Running on: " + System.getenv("HOSTNAME") + "\n";
 		return message;
 	}
 
