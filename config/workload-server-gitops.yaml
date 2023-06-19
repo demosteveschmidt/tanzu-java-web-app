@@ -7,8 +7,6 @@ metadata:
     apps.tanzu.vmware.com/has-tests:  true
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     app.kubernetes.io/part-of: tanzu-java-web-app
-    my.label: steve.gitops
-    trigger: 3
 spec:
   params:
   - name: ports
