@@ -15,7 +15,7 @@ public class HelloController {
 
 	@RequestMapping("/host")
 	public String hostname() {
-		String message = "Generation 6 running on: " + System.getenv("HOSTNAME") + "\n            (HOSTNAME)";
+		String message = "Generation 7 running on: " + System.getenv("HOSTNAME") + "\n            (HOSTNAME)";
 		return message;
 	}
 
